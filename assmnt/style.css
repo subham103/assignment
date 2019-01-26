@@ -1,11 +1,16 @@
-html { 
+/*html { 
   background: url(./images/back.gif) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 body {
+	background: url(./images/back.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin: 0;
 	padding: 0;
 	//background-color: #f7f7f7;
@@ -93,6 +98,9 @@ body {
  }
 }
 @media screen and (max-width: 768px) {
+	body{
+		width: 100
+	}
 	#intro{
 		display: none;
 	}
