@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=B612+Mono" rel="stylesheet">
+	<title>Portfolio</title>
+	<script>
+		
+	</script>
+	<script>
+		function loadXML(filename){ 
+			xhttp = new XMLHttpRequest();
+			xhttp.open("GET", filename, true);
+			xhttp.send(null);
+			return xhttp.responseXML;
+		}
+
+		function displayResult(file){
+			xml = loadXML(file + '.xml');
+			xsl = loadXML(file + '.xsl');
+
+			if (true){
+				xsltProcessor = new XSLTProcessor();
+				xsltProcessor.importStylesheet(xsl);
+				resultDocument = xsltProcessor.transformToFragment(xml, document);
+				//console.log(resultDocument);
+				document.getElementByTagName("html").appendChild(resultDocument);
+			}
+		}
+	</script>
+</head>
+<body>
+	<canvas id='canv' ></canvas>
+	<div class="container">
+		<div class="header">
+			<h1>Portfolio</h>
+		</div>
+		<div class="content">
+			<img src="../images/ph.jpg" alt="random" style="width: 75px; height:75px;">
+			<h1>Subham Sahoo</h1>
+			<p>Wanna know me? Guess what!! you can't.</p>
+		</div>
+		<div class="navbar">
+			<span><a href="" onclick="displayResult('about')">About</a></span>
+			<span><a href="" onclick="displayResult('contact')">Contact</a></span>
+			<span><a href="" onclick="displayResult('resume')">Resume</a></span>
+			<span><a href="" onclick="displayResult('interest')">Interest</a></span>
+		</div>
+	</div>
+</body>
+</html>

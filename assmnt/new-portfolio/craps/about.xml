@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmltext>
+	<brain>
+		<metadata>
+			<name>"viewport"</name>
+			<content>"width=device-width, initial-scale=1.0"</content>
+		</metadata>
+		<linklist>
+			<rel>"stylesheet"</rel>
+			<type>"text/css"</type>
+			<href>"style2.css"</href>
+		</linklist>
+		<linklist>
+			<rel>"stylesheet"</rel>
+			<type>""</type>
+			<href>"https://fonts.googleapis.com/css?family=Work+Sans"</href>
+		</linklist>
+		<linklist>
+			<rel>"stylesheet"</rel>
+			<type>""</type>
+			<href>"https://fonts.googleapis.com/css?family=Dancing+Script"</href>
+		</linklist>
+		<linklist>
+			<rel>"stylesheet"</rel>
+			<type>""</type>
+			<href>"https://fonts.googleapis.com/css?family=B612+Mono"</href>
+		</linklist>
+		<title>
+			About
+		</title>
+	</brain>
+	<body>
+		<div1>
+			<id1>"header"</id1>
+			<div11>
+				<id11>"intro"</id11>
+				<p1>
+					<b1>Subham Sahoo</b1>
+				</p1>
+			</div11>
+			<div12>
+				<id21>"nav-bar"</id21>
+				<span1>
+					<a1>
+						<href1>"#"</href1>
+						<data1>
+							Home
+						</data1>
+					</a1>
+				</span1>
+				<span2>
+					<a2>
+						<href2>"#"</href2>
+						<data2>
+							Contact Me
+						</data2>
+					</a2>
+				</span2>
+				<span3>
+					<a3>
+						<href3>"#"</href3>
+						<data3>
+							Resume
+						</data3>
+					</a3>
+				</span3>
+				<span4>
+					<a4>
+						<href4>"#"</href4>
+						<data4>
+							Interest
+						</data4>
+					</a4>
+				</span4>
+			</div12>
+		</div1>
+		<div2>
+			<id3>"container"</id3>
+			<img1>
+				<src1>
+					"../images/ph.jpg"
+				</src1>
+				<design1>
+					"width: 70px; height:70px;"
+				</design1>
+			</img1>
+			<p2>
+				<h1>
+					Subham Sahoo
+				</h1>
+			</p2>
+			<p3>
+				<data5>Web Developer at</data5>
+				<span5>
+					<class1>high</class1>
+					<data6>SDSLabs</data6>
+				</span5>
+			</p3>
+		</div2>
+		<div3>
+			<id4>"content"</id4>
+			<h2>
+				<class>"high"</class>
+				<data7>ABOUT ME</data7>
+			</h2>
+			<p4>
+				Al contrario di quanto si pensi, Lorem Ipsum non è semplicemente una sequenza casuale di caratteri. Risale ad un classico della letteratura latina del 45 AC, cosa che lo rende vecchio di 2000 anni. Richard McClintock, professore di latino al Hampden-Sydney College in Virginia, ha ricercato una delle più oscure parole latine, consectetur, da un passaggio del Lorem Ipsum e ha scoperto tra i vari testi in cui è citata, la fonte da cui è tratto il testo, le sezioni 1.10.32 and 1.10.33 del "de Finibus Bonorum et Malorum" di Cicerone. Questo testo è un trattato su teorie di etica, molto popolare nel Rinascimento. La prima riga del Lorem Ipsum, "Lorem ipsum dolor sit amet..", è tratta da un passaggio della sezione 1.10.32.
+				Esistono innumerevoli variazioni dei passaggi del Lorem Ipsum, ma la maggior parte hanno subito delle variazioni del tempo, a causa dell’inserimento di passaggi ironici, o di sequenze casuali di caratteri palesemente poco verosimili. Se si decide di utilizzare un passaggio del Lorem Ipsum, è bene essere certi che non contenga nulla di imbarazzante. In genere, i generatori di testo segnaposto disponibili su internet tendono a ripetere paragrafi predefiniti, rendendo questo il primo vero generatore automatico su intenet. Infatti utilizza un dizionario di oltre 200 vocaboli latini, combinati con un insieme di modelli di strutture di periodi, per generare passaggi di testo verosimili. Il testo così generato è sempre privo di ripetizioni, parole imbarazzanti o fuori luogo ecc. at LinkedIn, TripAdvisor, Cisco Systems, and Thomson Financial and got his BS and Masters at Cornell University. For more info, check out his writing, speaking, projects, and photos.
+				Yevgeniy (Jim) Brikman loves programming, writing, speaking, traveling, and lifting heavy things. He does not love talking about himself 
+			</p4>
+		</div3>
+	</body>
+</htmltext>
