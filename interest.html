@@ -9,16 +9,16 @@
 	<script src="index.js"></script>
 	<title>Interest</title>
 </head>
-<body>
+<body onload="func()">
 	<div id="header">
 		<div id="intro">
 			<p class="font1"><b>Subham Sahoo</b></p>
 		</div>
 		<div id="nav-bar">
-			<span><a onclick="loadDoc5()">Home</a></span>
-			<span><a onclick="loadDoc1()">About</a></span>
-			<span><a onclick="loadDoc2()">Contact</a></span>
-			<span><a onclick="loadDoc3()">Resume</a></span>
+			<span><a href="javascript:push('/index.html');" onclick="loadDoc5()">Home</a></span>
+			<span><a href="javascript:push('/about.html');" onclick="loadDoc1()">About</a></span>
+			<span><a href="javascript:push('/contact.html');" onclick="loadDoc2()">Contact</a></span>
+			<span><a href="javascript:push('/resume.html');" onclick="loadDoc3()">Resume</a></span>
 		</div>
 	</div>
 	<div id="container">

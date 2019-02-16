@@ -8,7 +8,7 @@ function func() {
 
     function GetRandomColor() {
         var r = 0, g = 0, b = 0;
-        while (r < 100 && g < 100 && b < 100)
+        if (true)
         {
             r = Math.floor(Math.random() * 256);
             g = Math.floor(Math.random() * 256);
@@ -50,7 +50,7 @@ function func() {
     for (var i = 0; i < num_particles; i++)
         particles.push(new Particle());
     loop();
-
+    return 7;
 }
 
 function loadDoc1() {
@@ -61,7 +61,7 @@ function loadDoc1() {
             }
           };
           
-          xhttp.open("GET", "index-about.html", true);
+          xhttp.open("GET", "about.html", true);
           xhttp.send(); 
         }
 
@@ -73,7 +73,7 @@ function loadDoc2() {
             }
           };
           
-          xhttp.open("GET", "index-contact.html", true);
+          xhttp.open("GET", "contact.html", true);
           xhttp.send(); 
         }
 
@@ -85,7 +85,7 @@ function loadDoc3() {
             }
           };
           
-          xhttp.open("GET", "index-resume.html", true);
+          xhttp.open("GET", "resume.html", true);
           xhttp.send(); 
         }
 
@@ -97,7 +97,7 @@ function loadDoc4() {
             }
           };
           
-          xhttp.open("GET", "index-interest.html", true);
+          xhttp.open("GET", "interest.html", true);
           xhttp.send(); 
         }
 function loadDoc5() {
@@ -111,3 +111,31 @@ function loadDoc5() {
           xhttp.open("GET", "index.html", true);
           xhttp.send(); 
         }
+function loadDoc(file) {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("yay").innerHTML =this.responseText;
+            }
+          };
+          
+          xhttp.open("GET", file , true);
+          xhttp.send(); 
+        }
+
+
+
+function push(url) {
+    history.pushState(null, null, url);
+}
+// function replace(url) {
+//     history.replaceState(null, null, url);
+// }
+
+window.onpopstate = function(event) {
+    // console.log("history changed to: " + document.location.href);
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    loadDoc(page);
+    func();
+}

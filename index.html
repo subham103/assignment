@@ -6,7 +6,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=B612+Mono" rel="stylesheet">
-	<script src="index.js"></script>
 	<title>Portfolio</title>
 </head>
 <body onload="func()">
@@ -22,12 +21,13 @@
 				<p>Wanna know me? Guess what!! you can't.</p>
 			</div>
 			<div class="navbar">
-				<span><a onclick="loadDoc1()">About</a></span>
-				<span><a onclick="loadDoc2()">Contact</a></span>
-				<span><a onclick="loadDoc3()">Resume</a></span>
-				<span><a onclick="loadDoc4()">Interest</a></span>
+				<span><a href="javascript:push('/about.html');" onclick="loadDoc1()">About</a></span>
+				<span><a href="javascript:push('/contact.html');" onclick="loadDoc2()">Contact</a></span>
+				<span><a href="javascript:push('/resume.html');" onclick="loadDoc3()">Resume</a></span>
+				<span><a href="javascript:push('/interest.html');" onclick="loadDoc4()">Interest</a></span>
 			</div>
 		</div>
 	</div>
+	<script src="index.js"></script>
 </body>
 </html>
