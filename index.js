@@ -61,7 +61,7 @@ function loadDoc1() {
             }
           };
           
-          xhttp.open("GET", "about.html", true);
+          xhttp.open("GET", "/assignment/about.html", true);
           xhttp.send(); 
         }
 
@@ -73,7 +73,7 @@ function loadDoc2() {
             }
           };
           
-          xhttp.open("GET", "contact.html", true);
+          xhttp.open("GET", "/assignment/contact.html", true);
           xhttp.send(); 
         }
 
@@ -85,7 +85,7 @@ function loadDoc3() {
             }
           };
           
-          xhttp.open("GET", "resume.html", true);
+          xhttp.open("GET", "/assignment/resume.html", true);
           xhttp.send(); 
         }
 
@@ -97,7 +97,7 @@ function loadDoc4() {
             }
           };
           
-          xhttp.open("GET", "interest.html", true);
+          xhttp.open("GET", "/assignment/interest.html", true);
           xhttp.send(); 
         }
 function loadDoc5() {
@@ -108,7 +108,7 @@ function loadDoc5() {
             }
           };
           
-          xhttp.open("GET", "index.html", true);
+          xhttp.open("GET", "/assignment/index.html", true);
           xhttp.send(); 
         }
 function loadDoc(file) {
@@ -135,7 +135,7 @@ function push(url) {
 window.onpopstate = function(event) {
     // console.log("history changed to: " + document.location.href);
     var path = window.location.pathname;
-    var page = path.split("/").pop();
+    var page = "/assignment/" + path.split("/").pop();
     loadDoc(page);
     func();
 }
