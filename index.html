@@ -2,11 +2,154 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/assignment/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/assignment/style.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=B612+Mono" rel="stylesheet">
 	<title>Portfolio</title>
+	<style>
+				* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body,html{
+		  width:100%; 
+		  margin:0;
+		  overflow:hidden;
+		  padding:0;
+		  /*z-index: -1;*/
+		  background-color: #363636;
+		  /*background:#000;*/
+		}
+
+		#canvas {
+			/*background:url(/home/subham/github/html_css_asmnt/assmnt/images/download.png);
+			background-size: cover;*/
+			position: absolute;
+		    /*z-index: -1;*/
+		    width: 100%;
+		    height: 100%;
+		}
+		.container{
+			width: 35%;
+		  	height: 60%;
+		  	overflow: auto;
+		  	margin: auto auto;
+		 	position: absolute;
+		 	background-color: black;
+		 	border-radius: 20px;
+		 	opacity: 0.6;
+		  	top: 0; left: 0; bottom: 0; right: 0;
+		  	border: solid black;
+		  	/*z-index: 0;*/
+		}
+		.inner-container{
+			position: relative;
+			width: 100%;
+			height: 95%;
+			/*display: flex;*/
+			/*flex-direction: column;*/
+		}
+		.header{
+			text-align: center;
+		    margin: 27px auto 0 auto;
+		    color: white;
+		    position: absolute;
+		    font-size: 1.4rem;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.content{
+			text-align: center;
+			margin: auto auto;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			width: 100%;
+			height: 30%;
+		}
+		.content > img{
+			border: 1px solid #EFF1EA;
+			border-radius: 50%;
+			
+		}
+		.content > h1{
+			margin-top: 20px;
+			margin-bottom: 30px;
+			color: white; 
+		}
+		.content > p{
+			color: white;
+		}
+		.navbar{
+		   	display: flex;
+		    width: 80%;
+		    margin: 0 auto;
+		    text-align: center;
+		    font-family: 'Work Sans', sans-serif;
+		    position:absolute;
+			bottom: 10px;
+		    left: 0;
+			right: 0;
+		}
+		.navbar > span{
+			width: 25%;
+			text-align: center;
+			cursor: pointer;
+		}
+		.navbar a:hover{
+			opacity: 0.5;
+		}
+		.navbar > span:hover{
+			border: 1px solid white;
+			border-radius: 10%;
+		}
+		.navbar a{
+			text-decoration: none;
+			font-size: 1rem;
+			color: white;
+		}
+
+		@media screen and (max-width: 1024px) {
+			.container{
+				width: 50%;
+			  	
+			}
+			.navbar{
+			    width: 90%;
+			    
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.container{
+				width: 70%;
+			  	
+			}
+			.navbar{
+			    width: 95%;
+			    
+			}
+		}
+
+		@media screen and (max-width: 500px) {
+			.container{
+				width: 90%;
+			  	
+			}
+			.navbar{
+			    width: 100%;
+			    
+			}
+		}
+	</style>
 </head>
 <body onload="func()">
 	<canvas id='canvas' ></canvas>

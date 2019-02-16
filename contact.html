@@ -2,12 +2,181 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/assignment/style2.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/assignment/style2.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=B612+Mono" rel="stylesheet">
 	<script src="index.js"></script>
 	<title>Content</title>
+	<style>
+		body {
+	margin: 0;
+	padding: 0;
+	color: #3C4347;
+	font-family: 'Work Sans', sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+#header{
+   display: flex;
+   justify-content: center;
+   position: relative; 
+}
+
+#intro{
+	font-size: 5vh;
+    width: 40%;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    color: #3C4347;
+    font-family: 'B612 Mono', monospace;
+}
+
+#nav-bar{
+   width: 40%;
+   display: flex;
+   margin-top: 30px;
+   justify-content: center;
+   position: absolute;
+   right: 10px;
+}
+
+#nav-bar span{
+	width: 25%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+
+#nav-bar a{
+	text-decoration: none;
+	position: relative;
+	color: #3C4347;
+	font-size: 2vh;
+	
+}
+
+#container {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	flex-direction: column;
+	border: 2px solid #F0F0F0;
+	border-radius: 3px;
+	margin: 130px 0 40px 0;
+	padding: 20px 0;
+	background-color: #f1f2f3;
+}
+#container img {
+	border-radius: 50%;
+	margin-top: 10px; 
+}
+
+.high{
+	color: #0C6C99;
+}
+#container h1{
+	margin-bottom: 0;
+	font-family: 'B612 Mono', monospace;
+}
+#container p:last-child{
+	margin-top: 1px;
+	margin-bottom: 10px;
+}
+
+#content {
+	text-align: center;
+	position: relative;
+	width: 40%;
+	margin: auto;
+}
+a:hover,a:active {
+	position: relative;
+  color: transparent;
+  background-color: transparent;
+  text-shadow: -.25px -.25px 0 #0FF, -.25px .25px 0 #0FF, .25px -.25px 0 #0FF, .25px .25px 0 #0FF;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0FF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s;
+}
+
+a:hover::before,a:active::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#content h1:hover {
+	position: relative;
+  color: transparent;
+  background-color: transparent;
+  text-shadow: -.25px -.25px 0 #0FF, -.25px .25px 0 #0FF, .25px -.25px 0 #0FF, .25px .25px 0 #0FF;
+}
+#content h1::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  left: 35%;
+  bottom:0;
+  background-color: #0FF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s;
+}
+
+#content h1:hover::before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 1000px) {
+	#nav-bar{
+	   width: 50%;
+ 	}
+ 	#content {
+		width: 65%;
+	}
+  #intro{
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+	#intro{
+		display: none;
+	}
+	#nav-bar{
+	   width: 100%;
+ 	}
+ 	#content {
+		width: 85%;
+	}
+}
+	</style>
 </head>
 <body onload="func()">
 	<div id="header">
